@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  padding: 1vw 1vw 0vw 1vw;
+}
+
+nav i {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.breadcrumb {
+  padding: 1vw 1vw;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.breadcrumb i {
+  font-size: 13px;
+  color: #051050;
+}
+
+.breadcrumb h1 {
+  display: none;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #040E4F;
+}
+
+main {
+  display: flex;
+}
+
+.main-left {
+  width: 50%;
+  padding: 0vw 1vw;
+}
+
+.main-left img {
+  width: 100%;
+  border-radius: 32px;
+}
+
+.main-right {
+  width: 50%;
+  padding: 0vw 4vw;
+}
+
+.main-right h1 {
+  font-weight: 700;
+}
+
+.main-right p {
+  font-weight: 100;
+  margin-top: 5px;
+}
+
+.main-right p a {
+  font-size: 13px;
+}
+
+.main-right p span {
+  display: none;
+}
+
+.main-right h2 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-top: 2vw;
+  color: #07176e;
+}
+
+.main-right button {
+  width: 100%;
+  padding: 1vw;
+  margin-top: 1vw;
+  border: none;
+  background-color: #08ED79;
+  color: #051050;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.main-right button:hover {
+  background-color: transparent;
+  border: 1px solid #051050;
+  color: #08ED79;
+}
+
+.main-right h3 {
+  font-size: 1vw;
+  color: #051050;
+  margin-top: 1vw;
+}
+
+.main-right h4 {
+  margin-top: 2vw;
+  color: rgba(0, 0, 0, 0.777);
+}
+
+.main-right #mobile {
+  display: none;
+}
+
+.main-right img {
+  width: 2vw;
+}
+
+.main-right .list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: -5px;
+  gap: 10px;
+}
+
+.main-right .list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.part-1 {
+  width: 50%;
+  min-height: 900vh;
+  background: linear-gradient(blue, black, red, green);
+  margin: 10vw auto 0vw 50%;
+}
+
+
+
+
+/* mediaq */
+
+@media (max-width: 600px) {
+
+  nav i {
+    font-size: 5vw;
+  }
+
+  nav {
+    padding: 2vw 2vw;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 2vw;
+  }
+
+  .breadcrumb a,
+  .breadcrumb i {
+    display: none;
+  }
+
+  .breadcrumb {
+    padding: 3vw;
+  }
+
+  .breadcrumb h1 {
+    font-size: 6vw;
+  }
+
+  .main-left,
+  .main-right {
+    width: 100%;
+  }
+
+  .mySwiper2 .swiper-button-next,
+  .mySwiper2 .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-slide .overlay .play {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .swiper-slide .overlay .play i {
+    font-size: 5vw;
+  }
+
+  .swiper-slide .overlay .play h3 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .swiper-slide .overlay h2 {
+    font-size: 3.5vw;
+  }
+
+  .main-right h1,
+  .main-right h2,
+  .main-right #pc {
+    display: none;
+  }
+
+  .main-right {
+    padding: 0vw 1vw;
+  }
+
+  .main-right button {
+    padding: 3vw 0vw;
+  }
+
+  .main-right #mobile {
+    display: block;
+    font-size: 3vw;
+    margin: 2vw 0vw;
+  }
+
+  .main-right .list {
+    gap: 5px;
+  }
+
+  .main-right h4 {
+    margin-top: 5vw;
+  }
+
+  .part-1 {
+    width: 100%;
+    margin: 0;
+    padding: 2vw;
+  }
+}
